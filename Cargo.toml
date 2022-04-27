@@ -1,0 +1,25 @@
+[package]
+name = "Rust_server_with_oAuth_and_whores"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.10"
+rocket_codegen = "0.4.10"
+diesel = { version = "1.4.4", features = ["postgres"] }
+dotenv = "0.15.0"
+r2d2-diesel = "1.0"
+r2d2 = "0.8.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+custom_derive ="0.1.7"
+chrono = "0.4"
+bson = "2.2.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
